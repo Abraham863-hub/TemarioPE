@@ -381,5 +381,36 @@
             <h2>En resumen</h2>
             <p>Las técnicas de muestreo son herramientas esenciales para estudiar poblaciones a partir de muestras más pequeñas. La elección de la técnica adecuada depende de varios factores, como el tamaño y la diversidad de la población, los recursos disponibles y los objetivos del estudio</p>
 
+<h2>1.8. Histogramas.</h2>
+        <p>Los histogramas son gráficos de barras que representan la distribución de frecuencia de una variable cuantitativa continua.</p>
+
+  <h2>Estructura de un histograma en HTML</h2>
+
+  <ul>
+    <li><strong>Eje horizontal:</strong> Representado por una etiqueta con la altura mínima necesaria. El ancho se ajusta a la cantidad de intervalos.</li>
+    <li><strong>Eje vertical:</strong> Representado por una etiqueta con el ancho mínimo necesario. La altura se ajusta al rango máximo de frecuencias.</li>
+    <li><strong>Barras:</strong> Dibujadas utilizando JavaScript o bibliotecas de visualización de datos como Chart.js o D3.js.</li>
+  </ul>
+
+  <h2>Ejemplo de código HTML básico</h2>
+<p>
+  ```javascript<br>
+  // Definición de datos de ejemplo<br>
+  const data = [10, 15, 20, 22, 18, 25, 30, 27, 23, 28];<br>
+
+  // Creación de elementos canvas para el eje horizontal y vertical<br>
+  const horizontalAxisCanvas = document.getElementById('horizontalAxis');<br>
+  const verticalAxisCanvas = document.getElementById('verticalAxis');<br>
+
+  // Obtención de contextos de dibujo para cada canvas<br>
+  const horizontalAxisCtx = horizontalAxisCanvas.getContext('2d');<br>
+  const verticalAxisCtx = verticalAxisCanvas.getContext('2d');<br>
+
+  // Definición de parámetros del histograma (intervalos, frecuencias, etc.)<br>
+  // ...<br>
+
+  // Dibujo de las barras del histograma<br>
+  // ...
+</p>
 </body>
 </html>

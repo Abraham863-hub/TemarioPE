@@ -414,5 +414,240 @@
   // Dibujo de las barras del histograma<br>
   // ...
 </p>
+
+<h1>Tema 2</h1>
+
+<h2>2.1 Técnicas de Conteo</h2>
+
+<h3>Principio aditivo</h3>
+<p>El principio aditivo establece que si una tarea se puede realizar de A maneras o de B maneras, 
+  entonces se puede realizar de A + B maneras. Este principio se utiliza para calcular el número total 
+  de posibilidades cuando hay alternativas mutuamente excluyentes.</p>
+
+<h3>Principio multiplicativo</h3>
+<p>El principio multiplicativo establece que si una tarea se puede realizar de A maneras y, 
+  después, otra tarea se puede realizar de B maneras, entonces ambas tareas se pueden realizar de 
+  A * B maneras. Este principio se utiliza para calcular el número total de posibilidades cuando las 
+  tareas se realizan de manera secuencial.</p>
+
+<h3>Notación Factorial</h3>
+<p>La notación factorial se representa como n! y se define como el producto de todos los números
+   enteros positivos desde 1 hasta n. Se utiliza para calcular el número de permutaciones de n elementos.</p>
+
+<h3>Permutaciones</h3>
+<p>Las permutaciones representan el número de formas en que se pueden ordenar n elementos. 
+  La fórmula para calcular el número de permutaciones de n elementos es: n!</p>
+
+<h3>Combinaciones</h3>
+<p>Las combinaciones representan el número de formas en que se pueden seleccionar k 
+  elementos de un conjunto de n elementos, sin importar el orden. La fórmula para calcular el número de 
+  combinaciones de n elementos tomados de k en k es: nCk = n! / (k! * (n-k)!)</p> 
+
+<h3>Diagrama de Árbol</h3>
+<p>El diagrama de árbol es una representación gráfica que muestra todas las posibles secuencias de 
+  eventos o resultados en un problema de conteo. Resulta útil para visualizar y entender las diferentes posibilidades.</p>
+
+<h3>Teorema del Binomio</h3>
+<p>El teorema del binomio establece que la expresión (a + b)^n se puede expandir en una suma de términos que involucran 
+  coeficientes binomiales. La fórmula general es: (a + b)^n = Σ (n!/(k!(n-k)!)) * a^(n-k) * b^k, donde k varía de 0 a n.</p>
+
+
+<h2>2.2 Teoría elemental de probabilidad</h2>
+
+
+<p>La probabilidad es una rama de las matemáticas que estudia la medición de la incertidumbre. La teoría elemental de probabilidad se enfoca en conceptos básicos como:</p>
+
+<ul>
+  <li><strong>Espacio muestral:</strong> 
+    Es el conjunto de todos los posibles resultados de un experimento aleatorio.</li>
+  <li><strong>Evento:</strong>
+    Es cualquier subconjunto del espacio muestral. Los eventos pueden ser simples (un solo resultado) o compuestos (una combinación de resultados).</li>
+  <li><strong>Probabilidad:</strong>
+    Es una medida que cuantifica la posibilidad de que ocurra un evento. Toma valores entre 0 y 1, donde 0 significa que el evento es imposible y 1 significa que el evento es seguro.</li>
+  <li><strong>Operaciones con eventos:</strong>
+    Se pueden realizar operaciones como unión, intersección y complemento entre eventos para analizar la probabilidad de eventos más complejos.</li>
+  <li><strong>Reglas de probabilidad:</strong> 
+    Existen reglas básicas como la probabilidad de la unión de eventos, la probabilidad condicional y el teorema de Bayes, que permiten calcular probabilidades de manera sistemática.</li>
+  <li><strong>Variables aleatorias:</strong>
+    Son funciones que asignan un valor numérico a cada resultado del experimento aleatorio. Pueden ser discretas o continuas.</li>
+  <li><strong>Distribuciones de probabilidad:</strong>
+    Describen el comportamiento de las variables aleatorias y permiten calcular probabilidades de eventos relacionados con ellas.</li>
+</ul>
+
+
+<h2>2.3 Probabilidad de Eventos</h2>
+ 
+<h3>Espacio muestral</h3>
+ <p>El espacio muestral, denotado por <strong>Ω</strong>, es el conjunto de todos los posibles resultados de un experimento aleatorio.
+   Representa el universo de posibilidades para un determinado experimento.</p>
+ 
+<h3>Evento</h3>
+ <p>Un evento es cualquier subconjunto del espacio muestral <strong>Ω</strong>. Puede ser un evento simple (un solo resultado) o un evento
+   compuesto (una combinación de resultados). Los eventos se denotan generalmente con letras mayúsculas, como <strong>A, B, C,</strong> etc.</p>
+
+
+<h3>Simbología</h3> 
+<ul> 
+  <li>muestral:<strong>Ω</strong>  </li> 
+  <li>Evento:<strong>A, B, C, etc.</strong> </li> 
+  <li>Unión de eventos: <strong>A ∪ B</strong> </li> 
+  <li>Intersección de eventos: <strong>A ∩ B</strong></li> 
+  <li>Complemento de un evento: <strong>A'</strong></li> 
+</ul>
+
+<h3>Unión de eventos</h3>
+ <p>La unión de dos eventos <strong> A y B, </strong> denotada como <strong> A ∪ B, </strong>es el evento que ocurre cuando ocurre al menos uno de los dos eventos.</p> 
+
+
+<h3>Intersección de eventos</h3> 
+<p>La intersección de dos eventos <strong>A</strong> y <strong>B,</strong> denotada como <strong>A ∩ B,</strong> es el evento que ocurre cuando ocurren ambos eventos simultáneamente.</p> 
+ 
+
+<h3>Diagramas de Venn</h3> 
+<p>Los diagramas de Venn son representaciones gráficas que muestran las relaciones entre los diferentes eventos dentro del espacio muestral. 
+  Permiten visualizar las operaciones de unión e intersección entre eventos.</p> 
+  
+  <h4>Ejemplo de diagrama de Venn</h4> 
+  <pre>Ω
+    ┌───────┐
+    │       │
+    │   A   │
+    │       │
+    │       │
+    │   B   │
+    │       │
+    │       │
+    └───────┘ </pre>
+  <p>En este diagrama, el espacio muestral <strong>Ω</strong> está representado por el rectángulo, y los eventos <strong>A y B</strong> se representan como subconjuntos dentro del espacio muestral.</p>
+ 
+
+<h2>2.4 Probabilidad con Técnicas de Conteo</h2>
+
+<h3>Axiomas de la Probabilidad</h3>
+<ul>
+  <li><strong>Axioma 1: </strong>La probabilidad de cualquier evento A es un número no negativo, es decir, P(A) ≥ 0.</li>
+  <li><strong>Axioma 2: </strong>La probabilidad del espacio muestral Ω es 1, es decir, P(Ω) = 1.</li>
+  <li><strong>Axioma 3: </strong>La probabilidad de la unión de eventos mutuamente excluyentes A1, A2, ...,
+     An es la suma de sus probabilidades individuales, es decir, P(A1 ∪ A2 ∪ ... ∪ An) = P(A1) + P(A2) + ... + P(An).</li>
+
+</ul>
+<h3>Teoremas de Probabilidad:</h3>
+
+<ul>
+  <li><strong>Teorema de Complementación: </strong>La probabilidad del complemento de un evento A es 1 menos la probabilidad de A, es decir, P(A') = 1 - P(A).</li>
+  <li><strong>Teorema de la Adición: </strong>La probabilidad de la unión de dos eventos A y B es igual a la suma de sus probabilidades individuales menos la probabilidad 
+    de su intersección, es decir, P(A ∪ B) = P(A) + P(B) - P(A ∩ B).</li>
+  <li><strong>Teorema de la Multiplicación: </strong>La probabilidad de la intersección de dos eventos A y B (eventos dependientes) es igual al producto de la probabilidad
+     de A y la probabilidad de B dado que A ha ocurrido, es decir, P(A ∩ B) = P(A) * P(B|A).</li>
+  <li><strong>Teorema de la Probabilidad Total: </strong>La probabilidad de un evento A es igual a la suma de los productos de las probabilidades de los eventos que forman
+     una partición del espacio muestral, multiplicadas por las probabilidades condicionales de A dado cada uno de esos eventos.</li>
+</ul>
+
+
+<h2>2.5 Probabilidad condicional</h2>
+
+<p>La probabilidad condicional es la probabilidad de que ocurra un evento <strong>A</strong> dado que ha ocurrido otro evento <strong>B.</strong> 
+  Se denota como <strong>P(A|B)</strong> y se lee "la probabilidad de <strong>A</strong>, dado <strong>B</strong>".</p>
+
+<h3>Probabilidad Condicional Dependiente</h3>
+<p>Cuando la ocurrencia de un evento afecta la probabilidad de ocurrencia de otro evento, se dice que los eventos son dependientes. 
+  En este caso, la probabilidad condicional <strong>P(A|B)</strong> es diferente a la probabilidad marginal <strong>P(A).</strong>
+  Fórmula de Probabilidad Condicional Dependiente:
+  <strong>(A|B) = P(A ∩ B) / P(B)</strong>
+  </p>
+
+<h3>Probabilidad Condicional Independiente</h3>
+<p>Cuando la ocurrencia de un evento no afecta la probabilidad de ocurrencia de otro evento, se dice que los eventos son independientes.
+  En este caso, la probabilidad condicional <strong>(A|B)</strong> es igual a la probabilidad marginal <strong>(A).</strong>
+  Fórmula de Probabilidad Condicional Independiente:
+  <strong>(A|B) = P(A)</strong>
+  Teorema de la Multiplicación para Eventos Independientes:
+  <strong>(A ∩ B) = P(A) * P(B)</strong></p>
+
+
+
+<h2>2.6 Ley multiplicativa</h2>
+
+<p>La probabilidad de la intersección de dos eventos <strong>A</strong> y <strong>B</strong> se calcula como: <br>
+  <strong>(A ∩ B) = P(A) * P(B|A)</strong> <br>
+  Donde:
+</p>
+
+<ul>
+  <li><strong>P(A ∩ B) </strong>es la probabilidad de la intersección de <strong>A</strong> y <strong>B.</strong></li>
+  <li><strong>P(A) </strong>es la probabilidad del evento <strong>A.</strong></li>
+  <li><strong>P(B|A) </strong>es la probabilidad del evento B dado que ha ocurrido el evento <strong>A.</strong></li>
+</ul>
+
+<p>
+  Esta fórmula se aplica tanto para eventos dependientes como independientes.
+  Para eventos independientes, la expresión se simplifica a:
+  <strong>P(A ∩ B) = P(A) * P(B)</strong>
+La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
+</p>
+
+<h2>2.7 Eventos independientes</h2>
+
+<h3>Regla de Bayes para Eventos Independientes</h3>
+<p><strong>P(A|B) = (P(B|A) * P(A)) / P(B)</strong> <br>
+  Donde:
+</p>
+
+<ul>
+  <li><strong>P(A|B) </strong>es la probabilidad de <strong>A</strong> dado <strong>B.</strong></li>
+  <li><strong>P(B|A) </strong>es la probabilidad de <strong>B</strong> dado <strong>A.</strong></li>
+  <li><strong>P(A) </strong>es la probabilidad de <strong>A.</strong></li>
+  <li><strong>P(B) </strong>es la probabilidad de <strong>B.</strong></li>
+</ul>
+
+<p>Esta regla permite calcular la probabilidad condicional inversa para eventos independientes.</p>
+
+<h2>3.1 Variables aleatorias discretas</h2>
+
+<p><strong>Distribución de probabilidad en forma general:</strong> Una distribución de probabilidad describe la probabilidad de que una 
+  variable aleatoria tome ciertos valores. La forma general de una distribución de probabilidad se puede escribir como:
+  <br><strong>P(X = x) = f(x)</strong><br>
+  Donde X es la variable aleatoria y <strong>f(x)</strong> es la función de probabilidad.</p>
+
+<p><strong>Valor esperado:</strong> El valor esperado, también conocido como la media, representa el valor promedio o central de una variable aleatoria.
+   Se calcula como la suma de los productos de cada posible valor por su respectiva probabilidad:
+   <br><strong>E(X) = Σ x * P(X = x)</strong></p>
+
+<p><strong>Variancia y desviación estándar:</strong>
+  La variancia mide qué tan dispersos están los valores de una variable aleatoria con respecto a su media. Se calcula como:
+  <br> <strong>Var(X) = E[(X - E(X))^2]</strong><br>
+  La desviación estándar es la raíz cuadrada de la variancia:
+  <br><strong> σ = √Var(X)</strong></p>
+
+<p><strong> Función acumulada:</strong>
+  La función de distribución acumulada <strong>(CDF)</strong> de una variable aleatoria <strong>X</strong> se denota como <strong>F(x)</strong> y se define como la probabilidad de que <strong>X</strong> tome un valor menor o igual a <strong>x</strong>:
+  <br><strong>F(x) = P(X ≤ x)</strong><br>
+  La <strong>CDF</strong> proporciona información sobre la probabilidad de que la variable aleatoria tome un valor menor o igual a un valor específico.</p>
+
+<h2>3.2 Variables aleatorias Continuas</h2>
+
+<p><strong>Distribución de probabilidad en forma general:</strong>
+  La forma general de una distribución de probabilidad se puede escribir como:
+<br><strong>P(X = x) = f(x)</strong><br>
+  Donde <strong>X</strong> es la variable aleatoria y <strong>f(x)</strong> es la función de probabilidad.</p>
+
+<p><strong>Valor esperado:</strong>
+  El valor esperado, también conocido como la media, se calcula como la suma de los productos de cada posible valor por su respectiva probabilidad:
+<br><strong>E(X) = Σ x * P(X = x)</strong></p>
+
+<p><strong>Variancia y desviación estándar:</strong>
+  La variancia mide qué tan dispersos están los valores de una variable aleatoria con respecto a su media:
+<br><strong>Var(X) = E[(X - E(X))^2]</strong><br>
+  La desviación estándar es la raíz cuadrada de la variancia:
+<br><strong>σ = √Var(X)</strong></p>
+
+<p><strong>Función acumulada:</strong>
+  La función de distribución acumulada <strong>(CDF)</strong> de una variable aleatoria <strong>X</strong> se define como la probabilidad de que <strong>X</strong> tome un valor menor o igual a <strong>x</strong>:
+<strong>F(x) = P(X ≤ x)</strong></p>
+
+<p><strong>Cálculos de probabilidad:</strong>
+  Los cálculos de probabilidad involucran el uso de las distribuciones de probabilidad, el valor esperado, la variancia y la función acumulada para determinar la probabilidad 
+  de eventos específicos o la probabilidad de que una variable aleatoria tome un valor dentro de cierto rango.</p>
+
 </body>
 </html>

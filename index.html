@@ -602,6 +602,8 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
 
 <p>Esta regla permite calcular la probabilidad condicional inversa para eventos independientes.</p>
 
+<h1>Tema 3</h1>
+
 <h2>3.1 Variables aleatorias discretas</h2>
 
 <p><strong>Distribución de probabilidad en forma general:</strong> Una distribución de probabilidad describe la probabilidad de que una 
@@ -648,6 +650,125 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
 <p><strong>Cálculos de probabilidad:</strong>
   Los cálculos de probabilidad involucran el uso de las distribuciones de probabilidad, el valor esperado, la variancia y la función acumulada para determinar la probabilidad 
   de eventos específicos o la probabilidad de que una variable aleatoria tome un valor dentro de cierto rango.</p>
+
+<h1>Tema 4</h1>
+
+<h2>4.1 Función de probabilidad.</h2>
+<p>La función de probabilidad <strong>P(X=x)</strong> asigna la probabilidad de que una variable aleatoria <strong>X</strong> tome un valor específico <strong>x.</strong><br>
+  Es una función que cumple con las siguientes propiedades: <br>
+<strong>P(X=x) ≥ 0</strong> para todo <strong>x</strong> (las probabilidades son no negativas)<br>
+<strong>Σ P(X=x) = 1</strong>, donde la suma se realiza sobre todos los posibles valores de <strong>X</strong> (la suma de todas las probabilidades es 1)<br>
+  Existen diferentes tipos de funciones de probabilidad, como la discreta y la continua, dependiendo del tipo de variable aleatoria.</p>
+
+<h2>4.2 Distribución binomial</h2>
+<p>Es una distribución de probabilidad discreta utilizada cuando se tienen n ensayos independientes, cada uno con dos posibles resultados (éxito o fracaso).<br>
+  Los parámetros que la caracterizan son:
+  <ul>
+    <li><strong>n: </strong>número de ensayos</li>
+    <li><strong>p: </strong>probabilidad de éxito en cada ensayo</li>
+  </ul>
+  La función de probabilidad está dada por: <strong>P(X=x) = (n! / (x! * (n-x)!)) * p^x * (1-p)^(n-x)</strong><br>
+  Algunas propiedades importantes:
+
+  <ul>
+    <li><strong>E[X] = n*p</strong> (media)</li>
+    <li><strong>Var(X)= np(1-p)</strong> (varianza)</li>
+    <li>La distribución es simétrica si <strong>p = 0.5</strong>, y asimétrica en caso contrario.</li>
+  </ul>
+  
+  
+  </p>
+
+<h2>4.3 Distribución hipergeométrica</h2>
+<p>
+  Es una distribución de probabilidad discreta que modela el número de éxitos en una muestra aleatoria sin reemplazo de una población finita.<br>
+  Los parámetros que la caracterizan son:
+<ul>
+  <li><strong>N: </strong>tamaño de la población</li>
+  <li><strong>K: </strong>número de elementos de interés en la población</li>
+  <li><strong>n: </strong>tamaño de la muestra</li>
+</ul>
+
+  La función de probabilidad está dada por: <strong>P(X=x) = ((K! / (x! * (K-x)!)) * ((N-K)! / ((n-x)! * (N-K-n+x)!))) / (N! / (n! * (N-n)!))</strong><br>
+  Algunas propiedades importantes:
+  <ul>
+    <li><strong>E[X] = n*K/N </strong>(media)</li>
+    <li><strong>Var(X) = n*K/N * (N-K)/N * (N-n)/(N-1) </strong>(varianza)</li>
+    <li>A diferencia de la binomial, en la hipergeométrica los ensayos no son independientes.</li>
+  </ul>
+</p>
+
+<h2>4.4 Distribución de Poisson</h2>
+<p>
+  Es una distribución de probabilidad discreta que modela el número de eventos independientes que ocurren en un intervalo de tiempo o espacio dado. <br>
+  El parámetro que la caracteriza es <strong>λ</strong>, que representa la tasa media de ocurrencia de los eventos. <br>
+  La función de probabilidad está dada por: <strong>P(X=x) = e^(-λ) * λ^x / x!</strong> <br>
+  Algunas propiedades importantes:
+
+  <ul>
+    <li><strong>E[X] = λ </strong>(media)</li>
+    <li><strong>Var(X) = λ</strong> (varianza)</li>
+    <li>Útil para modelar eventos raros que ocurren de manera independiente en un intervalo de tiempo o espacio.</li>
+  </ul>
+</p>
+
+<h2>4.5 Distribución normal</h2>
+<p>
+  Es una distribución de probabilidad continua, simétrica y unimodal. <br>
+  Se caracteriza por dos parámetros: la media <strong>(μ)</strong> y la desviación estándar <strong>(σ).</strong> <br>
+  La función de densidad está dada por: <strong>f(x) = (1 / (σ * √(2π))) * e^(-(x-μ)^2 / (2*σ^2)) </strong><br>
+  Algunas propiedades importantes:
+  <ul>
+    <li><strong>E[X] = μ </strong>(media)</li>
+    <li><strong>Var(X) = σ^2 </strong>(varianza)</li>
+    <li>Es ampliamente utilizada en estadística y probabilidad debido a sus propiedades matemáticas.</li>
+  </ul>
+</p>
+
+<h2>4.6 Distribución T-student</h2>
+
+<p>
+  Es una distribución de probabilidad continua que se utiliza cuando el tamaño de la muestra es pequeño. <br>
+  Se caracteriza por un único parámetro: los grados de libertad <strong>(ν)</strong>. <br>
+  La función de densidad está dada por: <strong>f(x) = Γ((ν+1)/2) / (√(νπ) * Γ(ν/2)) * (1 + x^2/ν)^(-(ν+1)/2)</strong> <br>
+  Algunas propiedades importantes:
+
+  <ul>
+    <li><strong>E[X] = 0</strong> (media)</li>
+    <li><strong>Var(X) = ν / (ν-2)</strong> (varianza)</li>
+    <li>Se utiliza en inferencia estadística, como en la construcción de intervalos de confianza y pruebas de hipótesis.</li>
+  </ul>
+</p>
+
+<h2>4.7 Distribución Chi cuadrada</h2>
+
+<p>
+  Es una distribución de probabilidad continua que se utiliza para modelar la suma de los cuadrados de variables aleatorias normales independientes. <br>
+  Se caracteriza por un único parámetro: los grados de libertad <strong>(ν)</strong>. <br>
+  La función de densidad está dada por: <strong>f(x) = x^((ν/2)-1) * e^(-x/2) / (2^(ν/2) * Γ(ν/2))</strong>, para <strong>x ≥ 0.</strong> <br>
+  Algunas propiedades importantes:
+
+  <ul>
+    <li><strong>E[X] = ν</strong> (media)</li>
+    <li><strong>Var(X) = 2ν </strong>(varianza)</li>
+    <li>Se utiliza en pruebas de bondad de ajuste, análisis de varianza y otros procedimientos estadísticos.</li>
+  </ul>
+</p>
+
+<h2>4.8 Distribución F</h2>
+
+<p>
+  Es una distribución de probabilidad continua que se utiliza cuando se comparan dos varianzas. <br>
+  Se caracteriza por dos parámetros: los grados de libertad del numerador <strong>(ν1)</strong> y los grados de libertad del denominador <strong>(ν2)</strong>. <br>
+  La función de densidad está dada por: <strong>f(x) = (Γ((ν1+ν2)/2) / (Γ(ν1/2) * Γ(ν2/2))) * (ν1/ν2)^(ν1/2) * x^(ν1/2-1) * (1 + (ν1/ν2)*x)^(-(ν1+ν2)/2) </strong><br>
+  Algunas propiedades importantes:
+
+  <ul>
+    <li><strong>E[X] = ν2 / (ν2 - 2), si ν2 > 2 </strong>(media)</li>
+    <li><strong>Var(X) = 2ν2^2 * (ν1 + ν2 - 2) / (ν1 * (ν2 - 2)^2 * (ν2 - 4)),</strong> si <strong>ν2 > 4</strong> (varianza)</li>
+    <li>Se utiliza en análisis de varianza y otros procedimientos estadísticos inferenciales.</li>
+  </ul>
+</p>
 
 </body>
 </html>

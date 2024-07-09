@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     body {
@@ -33,9 +34,66 @@
 </style>
 <body>
 
-    <h1> Tema 1 Estadística descriptiva</h1>
+  <div class="container">
+    <h1>Indice</h1>
 
-<h2>1.1 Conceptos básicos de estadística</h2>
+    <nav>
+      
+        <h2><a href="#tema1">Tema 1 ESTADÍSTICA DESCRIPTIVA</a></h2>
+        <ul>
+          <li><a href="#tema11">1.1 Conceptos básicos de estadística</a></li>
+          <li><a href="#tema12">1.2 Descripción de datos</a></li>
+          <li><a href="#tema13">1.3 Medidas de tendencia central</a></li>
+          <li><a href="#tema14">1.4 Parámetros para datos agrupados</a></li>
+          <li><a href="#tema15">1.5 Distribución de frecuencias</a></li>
+          <li><a href="#tema16">1.6 Técnicas de agrupación de datos</a></li>
+          <li><a href="#tema17">1.7 Técnicas de muestreo</a></li>
+          <li><a href="#tema18">1.8. Histogramas</a></li>
+        </ul>
+        <h2><a href="#tema2">Tema 2 FUNDAMENTOS DE LA TEORÍA DE PROBABILIDAD</a></h2>
+        <ul>
+          <li><a href="#tema21">2.1 Técnicas de Conteo</a></li>
+          <li><a href="#tema22">2.2 Teoría elemental de probabilidad</a></li>
+          <li><a href="#tema23">22.3 Probabilidad de Eventos</a></li>
+          <li><a href="#tema24">2.4 Probabilidad con Técnicas de Conteo</a></li>
+          <li><a href="#tema25">2.5 Probabilidad condicional</a></li>
+          <li><a href="#tema26">2.6 Ley multiplicativa</a></li>
+          <li><a href="#tema27">2.7 Eventos independientes</a></li>
+        </ul>
+        <h2><a href="#tema3">Tema 3 VARIABLES ALEATORIAS</a></h2>
+        <ul>
+          <li><a href="#tema31">3.1 Variables aleatorias discretas</a></li>
+          <li><a href="#tema32">3.2 Variables aleatorias Continuas</a></li>
+        
+        </ul>
+        <h2><a href="#tema4">Tema 4 DISTRIBUCIONES DE PROBABILIDAD</a></h2>
+        <ul>
+          <li><a href="#tema41">4.1 Función de probabilidad</a></li>
+          <li><a href="#tema42">4.2 Distribución binomial</a></li>
+          <li><a href="#tema43">4.3 Distribución hipergeométrica</a></li>
+          <li><a href="#tema44">4.4 Distribución de Poisson</a></li>
+          <li><a href="#tema45">4.5 Distribución normal</a></li>
+          <li><a href="#tema46">4.6 Distribución T-student</a></li>
+          <li><a href="#tema47">4.7 Distribución Chi cuadrada</a></li>
+          <li><a href="#tema48">4.8 Distribución F</a></li>
+        </ul>
+        <h2><a href="#tema5">Tema 5 REGRESIÓN LINEAL</a></h2>
+        <ul>
+          <li><a href="#tema51">5.1 Concepto de regresión lineal</a></li>
+        </ul>
+        <h2><a href="#ayuda">Apoyo Extra</a></h2>
+        <ul>
+          <li><a href="#vid1">Variables Aleatorias Discretas</a></li>
+          <li><a href="#vid2">Variables Aleatorias Continuas</a></li>
+          <li><a href="#vid3">Funcion Binomial</a></li>
+        </ul>
+      
+    </nav>
+
+
+<h1 id="Tema1"> Tema 1 Estadística descriptiva</h1>
+
+<h2 id="Tema11">1.1 Conceptos básicos de estadística</h2>
 
 <h3>Definición</h3>
 <p>La estadística es la ciencia que se encarga de la recolección, organización, análisis e interpretación de datos para extraer información útil y tomar decisiones acertadas.</p>
@@ -68,7 +126,7 @@
 <p>La estadística es una herramienta fundamental para comprender el mundo que nos rodea y tomar decisiones informadas. Los conceptos básicos de población, muestra, parámetros aleatorios y teoría de la decisión son esenciales para trabajar con datos de manera efectiva.</p>
 
 
-<h2>1.2 Descripción de datos</h2>  
+<h2 id="Tema12">1.2 Descripción de datos</h2>  
     <h3>Datos agrupados y no agrupados</h3>
     <p>Los datos **agrupados** se organizan en intervalos (clases) con su respectiva frecuencia. En cambio, los datos **no agrupados** se presentan en su forma original, sin ningún tipo de agrupamiento, listando todos los valores individuales.</p>
 
@@ -127,7 +185,7 @@
     <p>**Importancia:**</p>
     <p>La descripción de datos permite organizar, resumir y comprender un conjunto de datos para realizar análisis estadísticos más profundos y tomar decisiones informadas.</p>
 
-<h2>1.3 Medidas de tendencia central</h2>    
+<h2 id="Tema13">1.3 Medidas de tendencia central</h2>    
 <h3>Medidas de tendencia central</h3>
 <ul>
     <li>**Media aritmética (X̄):** Es el promedio de un conjunto de datos. Se calcula sumando todos los valores y dividiendo por el número total de datos. Es la medida de tendencia central más común y utilizada.</li>
@@ -149,7 +207,7 @@
 <h3>Elección de la medida adecuada</h3>
 <p>La elección de la medida de tendencia central y dispersión adecuada depende del tipo de datos, la distribución de los datos y el objetivo del análisis.</p>
 
-<h2>1.4 Parámetros para datos agrupados </h2>    
+<h2 id="Tema14">1.4 Parámetros para datos agrupados </h2>    
 <h3>Definición</h3>
 <p>Los datos agrupados se presentan en intervalos de clase (también llamados clases), cada uno con un límite inferior y un límite superior. En este tipo de datos, no se conoce el valor exacto de cada dato, solo la frecuencia de datos que cae dentro de cada intervalo.</p>
 
@@ -195,7 +253,7 @@
 <h3>En resumen</h3>
 <p>Los parámetros para datos agrupados son herramientas útiles para analizar conjuntos de datos donde no se conoce el valor exacto de cada dato. Permiten estimar la tendencia central y la dispersión de la población, lo cual puede ser útil para tomar decisiones informadas en diversos contextos.</p>
 
-<h2>1.5 Distribución de frecuencias</h2>    
+<h2 id="Tema15">1.5 Distribución de frecuencias</h2>    
 <p>Una distribución de frecuencias es una herramienta estadística que permite organizar y resumir un conjunto de datos, mostrando la frecuencia con la que aparece cada valor o intervalo de valores.</p>
 
 <h3>Tipos de Distribuciones de Frecuencias</h3>
@@ -297,7 +355,7 @@
 </ul>
 <p>En resumen, las distribuciones de frecuencias son herramientas esenciales para el análisis descriptivo de datos, ya que permiten organizar, resumir y comprender la distribución de los datos en un conjunto, lo cual es fundamental para tomar decisiones informadas en diversos campos.</p>
 
-<h2>1.6 Técnicas de agrupación de datos</h2>     
+<h2 id="Tema16">1.6 Técnicas de agrupación de datos</h2>     
 <h3>Definición</h3>
 <p>Las técnicas de agrupación de datos, también conocidas como clustering o análisis de cluster, son un conjunto de métodos estadísticos que permiten agrupar datos en función de su similitud o cercanía. El objetivo es identificar grupos o clusters de datos que comparten características comunes y diferenciarse de otros grupos.</p>
 
@@ -339,7 +397,7 @@
 <p>Las técnicas de agrupación de datos son herramientas poderosas para descubrir patrones en conjuntos de datos complejos y tomar decisiones informadas. La elección de la técnica adecuada depende del tipo de datos, el tamaño del conjunto de datos y el objetivo del análisis.</p>
 
 
-<h2>1.7 Técnicas de muestreo</h2>   
+<h2 id="Tema17">1.7 Técnicas de muestreo</h2>   
     <h3>Técnicas de muestreo</h3> 
     <h4>Definición</h4> 
     <p>Las técnicas de muestreo son un conjunto de métodos estadísticos que permiten seleccionar un subgrupo (muestra) de una población más grande, con el objetivo de estudiar las características de la población a partir de los datos obtenidos de la muestra.</p> 
@@ -383,7 +441,7 @@
             <h2>En resumen</h2>
             <p>Las técnicas de muestreo son herramientas esenciales para estudiar poblaciones a partir de muestras más pequeñas. La elección de la técnica adecuada depende de varios factores, como el tamaño y la diversidad de la población, los recursos disponibles y los objetivos del estudio</p>
 
-<h2>1.8. Histogramas</h2>
+<h2 id="tema18">1.8. Histogramas</h2>
         <p>Los histogramas son gráficos de barras que representan la distribución de frecuencia de una variable cuantitativa continua.</p>
 
   <h2>Estructura de un histograma en HTML</h2>
@@ -415,9 +473,9 @@
   // ...
 </p>
 
-<h1>Tema 2 Fundamentos de la Teoría de Probabilidad</h1>
+<h1 id="Tema2">Tema 2 Fundamentos de la Teoría de Probabilidad</h1>
 
-<h2>2.1 Técnicas de Conteo</h2>
+<h2 id="tema21">2.1 Técnicas de Conteo</h2>
 
 <h3>Principio aditivo</h3>
 <p>El principio aditivo establece que si una tarea se puede realizar de A maneras o de B maneras, 
@@ -452,7 +510,7 @@
   coeficientes binomiales. La fórmula general es: (a + b)^n = Σ (n!/(k!(n-k)!)) * a^(n-k) * b^k, donde k varía de 0 a n.</p>
 
 
-<h2>2.2 Teoría elemental de probabilidad</h2>
+<h2 id="tema22">2.2 Teoría elemental de probabilidad</h2>
 
 
 <p>La probabilidad es una rama de las matemáticas que estudia la medición de la incertidumbre. La teoría elemental de probabilidad se enfoca en conceptos básicos como:</p>
@@ -475,7 +533,7 @@
 </ul>
 
 
-<h2>2.3 Probabilidad de Eventos</h2>
+<h2 id="tema23">2.3 Probabilidad de Eventos</h2>
  
 <h3>Espacio muestral</h3>
  <p>El espacio muestral, denotado por <strong>Ω</strong>, es el conjunto de todos los posibles resultados de un experimento aleatorio.
@@ -521,7 +579,7 @@
   <p>En este diagrama, el espacio muestral <strong>Ω</strong> está representado por el rectángulo, y los eventos <strong>A y B</strong> se representan como subconjuntos dentro del espacio muestral.</p>
  
 
-<h2>2.4 Probabilidad con Técnicas de Conteo</h2>
+<h2 id="tema24">2.4 Probabilidad con Técnicas de Conteo</h2>
 
 <h3>Axiomas de la Probabilidad</h3>
 <ul>
@@ -544,7 +602,7 @@
 </ul>
 
 
-<h2>2.5 Probabilidad condicional</h2>
+<h2 id="tema25">2.5 Probabilidad condicional</h2>
 
 <p>La probabilidad condicional es la probabilidad de que ocurra un evento <strong>A</strong> dado que ha ocurrido otro evento <strong>B.</strong> 
   Se denota como <strong>P(A|B)</strong> y se lee "la probabilidad de <strong>A</strong>, dado <strong>B</strong>".</p>
@@ -566,7 +624,7 @@
 
 
 
-<h2>2.6 Ley multiplicativa</h2>
+<h2 id="tema26">2.6 Ley multiplicativa</h2>
 
 <p>La probabilidad de la intersección de dos eventos <strong>A</strong> y <strong>B</strong> se calcula como: <br>
   <strong>(A ∩ B) = P(A) * P(B|A)</strong> <br>
@@ -586,7 +644,7 @@
 La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
 </p>
 
-<h2>2.7 Eventos independientes</h2>
+<h2 id="tema27">2.7 Eventos independientes</h2>
 
 <h3>Regla de Bayes para Eventos Independientes</h3>
 <p><strong>P(A|B) = (P(B|A) * P(A)) / P(B)</strong> <br>
@@ -602,9 +660,9 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
 
 <p>Esta regla permite calcular la probabilidad condicional inversa para eventos independientes.</p>
 
-<h1>Tema 3 Variables Aleatorias</h1>
+<h1 id="tema3">Tema 3 Variables Aleatorias</h1>
 
-<h2>3.1 Variables aleatorias discretas</h2>
+<h2 id="tema31">3.1 Variables aleatorias discretas</h2>
 
 <p><strong>Distribución de probabilidad en forma general:</strong> Una distribución de probabilidad describe la probabilidad de que una 
   variable aleatoria tome ciertos valores. La forma general de una distribución de probabilidad se puede escribir como:
@@ -626,7 +684,7 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
   <br><strong>F(x) = P(X ≤ x)</strong><br>
   La <strong>CDF</strong> proporciona información sobre la probabilidad de que la variable aleatoria tome un valor menor o igual a un valor específico.</p>
 
-<h2>3.2 Variables aleatorias Continuas</h2>
+<h2 id="tema32">3.2 Variables aleatorias Continuas</h2>
 
 <p><strong>Distribución de probabilidad en forma general:</strong>
   La forma general de una distribución de probabilidad se puede escribir como:
@@ -651,16 +709,16 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
   Los cálculos de probabilidad involucran el uso de las distribuciones de probabilidad, el valor esperado, la variancia y la función acumulada para determinar la probabilidad 
   de eventos específicos o la probabilidad de que una variable aleatoria tome un valor dentro de cierto rango.</p>
 
-<h1>Tema 4 Distribuciones de Probabilidad</h1>
+<h1 id="tema4">Tema 4 Distribuciones de Probabilidad</h1>
 
-<h2>4.1 Función de probabilidad.</h2>
+<h2 id="tema41">4.1 Función de probabilidad.</h2>
 <p>La función de probabilidad <strong>P(X=x)</strong> asigna la probabilidad de que una variable aleatoria <strong>X</strong> tome un valor específico <strong>x.</strong><br>
   Es una función que cumple con las siguientes propiedades: <br>
 <strong>P(X=x) ≥ 0</strong> para todo <strong>x</strong> (las probabilidades son no negativas)<br>
 <strong>Σ P(X=x) = 1</strong>, donde la suma se realiza sobre todos los posibles valores de <strong>X</strong> (la suma de todas las probabilidades es 1)<br>
   Existen diferentes tipos de funciones de probabilidad, como la discreta y la continua, dependiendo del tipo de variable aleatoria.</p>
 
-<h2>4.2 Distribución binomial</h2>
+<h2 id="tema42">4.2 Distribución binomial</h2>
 <p>Es una distribución de probabilidad discreta utilizada cuando se tienen n ensayos independientes, cada uno con dos posibles resultados (éxito o fracaso).<br>
   Los parámetros que la caracterizan son:
   <ul>
@@ -679,7 +737,7 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
   <img src="./img/binomial.png">
   </p>
 
-<h2>4.3 Distribución hipergeométrica</h2>
+<h2 id="tema43">4.3 Distribución hipergeométrica</h2>
 <p>
   Es una distribución de probabilidad discreta que modela el número de éxitos en una muestra aleatoria sin reemplazo de una población finita.<br>
   Los parámetros que la caracterizan son:
@@ -700,7 +758,7 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
   <img src="./img/hiper.png">
 </p>
 
-<h2>4.4 Distribución de Poisson</h2>
+<h2 id="tema44">4.4 Distribución de Poisson</h2>
 <p>
   Es una distribución de probabilidad discreta que modela el número de eventos independientes que ocurren en un intervalo de tiempo o espacio dado. <br>
   El parámetro que la caracteriza es <strong>λ</strong>, que representa la tasa media de ocurrencia de los eventos. <br>
@@ -716,7 +774,7 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
   <img src="./img/poisson.png">
 </p>
 
-<h2>4.5 Distribución normal</h2>
+<h2 id="tema45">4.5 Distribución normal</h2>
 <p>
   Es una distribución de probabilidad continua, simétrica y unimodal. <br>
   Se caracteriza por dos parámetros: la media <strong>(μ)</strong> y la desviación estándar <strong>(σ).</strong> <br>
@@ -731,7 +789,7 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
   <img src="./img/normal.png">
 </p>
 
-<h2>4.6 Distribución T-student</h2>
+<h2 id="tema46">4.6 Distribución T-student</h2>
 
 <p>
   Es una distribución de probabilidad continua que se utiliza cuando el tamaño de la muestra es pequeño. <br>
@@ -746,7 +804,7 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
   </ul>
 </p>
 
-<h2>4.7 Distribución Chi cuadrada</h2>
+<h2 id="tema47">4.7 Distribución Chi cuadrada</h2>
 
 <p>
   Es una distribución de probabilidad continua que se utiliza para modelar la suma de los cuadrados de variables aleatorias normales independientes. <br>
@@ -761,7 +819,7 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
   </ul>
 </p>
 
-<h2>4.8 Distribución F</h2>
+<h2 id="tema48">4.8 Distribución F</h2>
 
 <p>
   Es una distribución de probabilidad continua que se utiliza cuando se comparan dos varianzas. <br>
@@ -777,13 +835,13 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
 </p>
 
 
-<h1> Tema 5 Regresión lineal</h1>
+<h1 id="tema5"> Tema 5 Regresión lineal</h1>
 
-<h2>5.1 Concepto de regresión lineal</h2>
+<h2 id="tema51">5.1 Concepto de regresión lineal</h2>
 
 
 
-<h3>5.1.1 Diagrama de dispersión</h3> 
+<h3>Diagrama de dispersión</h3> 
 <p> 
   Un diagrama de dispersión es una representación gráfica que muestra la relación entre dos variables. 
   Cada punto en el diagrama representa un par de valores de las variables. 
@@ -791,14 +849,14 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
 </p>
 
 
-<h3>5.1.2 Regresión lineal simple</h3>
+<h3>Regresión lineal simple</h3>
 <p>
   La regresión lineal simple es una técnica estadística que permite modelar la relación entre una variable dependiente y una variable 
   independiente a través de una ecuación lineal. La ecuación de regresión lineal simple tiene la forma:
   <strong> Y = a + bX</strong>, donde "<strong>a</strong>" es el intercepto y "<strong>b</strong>" es la pendiente de la recta de regresión.
 </p>
 
-<h3>5.1.3 Correlación</h3>
+<h3>Correlación</h3>
 <p>
   La correlación es una técnica estadística que mide la fuerza y la dirección de la relación lineal entre dos variables. 
   El coeficiente de correlación, denotado por "<strong>r</strong>", varía entre <strong>-1 y 1</strong>. Un valor de <strong>r = 1 </strong>indica una correlación positiva perfecta,
@@ -806,21 +864,21 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
 </p>
 
 
-<h3>5.1.4 Determinación y análisis de los coeficientes de correlación y de determinación</h3>
+<h3>Determinación y análisis de los coeficientes de correlación y de determinación</h3>
 <p>
   El coeficiente de determinación, denotado por "<strong>r^2</strong>", es una medida que indica qué porcentaje de la variabilidad de la variable 
   dependiente es explicada por la variable independiente en un modelo de regresión lineal. El análisis de estos coeficientes 
   permite evaluar la calidad del ajuste del modelo de regresión.
 </p>
 
-<h3>5.1.5 Distribución normal bidimensional</h3>
+<h3>Distribución normal bidimensional</h3>
 <p>
   La distribución normal bidimensional, también conocida como distribución normal conjunta, describe la distribución conjunta de 
   dos variables aleatorias normalmente distribuidas. Esta distribución se utiliza en el análisis de la regresión y la correlación 
   cuando se asume que las variables siguen una distribución normal.
 </p>
 
-<h3>5.1.6 Intervalos de confianza y pruebas para el coeficiente de correlación</h3>
+<h3>Intervalos de confianza y pruebas para el coeficiente de correlación</h3>
 <p>
   Los intervalos de confianza y las pruebas de hipótesis para el coeficiente de correlación permiten evaluar la significancia 
   estadística de la relación entre dos variables. Estos procedimientos se basan en la distribución muestral del coeficiente de
@@ -828,12 +886,18 @@ La ley multiplicativa es fundamental en el cálculo de probabilidades conjuntas.
 </p>
 
 
-<h3>5.1.7 Errores de medición</h3>
+<h3>Errores de medición</h3>
 <p>
   Los errores de medición se refieren a las discrepancias entre los valores observados de una variable y sus verdaderos valores.
   Estos errores pueden afectar la estimación de los parámetros de regresión y correlación, y deben ser considerados en el análisis 
   de la relación entre variables.
 </p>
+
+<h1 id="ayuda">APOYO EXTRA</h1>
+<p id="vid1">Haz clic en el siguiente enlace para ver nuestro video sobre las <a href="https://drive.google.com/file/d/1SMrfXXNY8X-1aTsRR4lQtM68-6oxBWCy/view?usp=share_link" target="_blank">variables aleatorias discretas</a></p>
+<p id="vid2">Haz clic en el siguiente enlace para ver nuestro video sobre las <a href="https://drive.google.com/file/d/1fuwKditHNexLctkZlbX_MrULP5sy8GdU/view?usp=share_link" target="_blank">variables aleatorias continuas</a></p>
+<p id="vid3">Haz clic en el siguiente enlace para ver nuestro video sobre las <a href="https://drive.google.com/file/d/1paKdvbnhE2Lld_cKZRkTbUZ0BSrXA3_I/view?usp=share_link" target="_blank">Función binomial</a></p>
+
 
 </body>
 </html>
